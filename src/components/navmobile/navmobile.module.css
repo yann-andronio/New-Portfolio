@@ -22,7 +22,7 @@
     width: 100%;
     justify-content: center ;
     align-items: center;
-     z-index: 10;
+     z-index: 1000;
      bottom: 0;
      background-color: #7A6E4F;
      border-top-right-radius: 17px;
