@@ -26,3 +26,17 @@
     border-bottom-left-radius: 17px;
     
 }
+
+@media (max-width: 1200px) {
+  
+}
+
+/* ecran phone kely*/
+@media (max-width: 768px) {
+
+}
+
+/* ecran phone kely be*/
+@media (max-width: 480px) {
+
+}

@@ -1,0 +1,45 @@
+
+.navparents{
+    position: relative;
+     background-color: violet;
+ 
+ }
+ 
+ .active{
+     color: rgb(183, 153, 80);
+     font-size: 1rem;
+     font-weight: 700;
+ }
+ 
+ .Non_active{
+     color: white;
+     font-size: 1rem;
+     font-weight: 700;
+ }
+ 
+ .navNavLink{
+    display: none;
+    width: 100%;
+    justify-content: center ;
+    align-items: center;
+     z-index: 10;
+     bottom: 0;
+     background-color: #7A6E4F;
+     border-top-right-radius: 17px;
+     border-top-left-radius: 17px;
+     
+ }
+ 
+ @media (max-width: 1200px) {
+   
+ }
+ 
+ /* ecran phone kely*/
+ @media (max-width: 768px) {
+ 
+ }
+ 
+ /* ecran phone kely be*/
+ @media (max-width: 480px) {
+ 
+ }

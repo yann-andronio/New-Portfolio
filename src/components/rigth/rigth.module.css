@@ -1,10 +1,49 @@
-
-.titleabout::before{
+.titleabout::before {
     width: 27%;
     height: 5px;
     content: "";
     left: 0;
     position: absolute;
     bottom: -5px;
-    background-color:  rgb(183, 153, 80);;
+    background-color: rgb(183, 153, 80);
+    ;
+}
+
+.navbarmobiile{
+    display: none;
+}
+
+.cvmobile{
+    display: none;
+}
+
+@media (max-width: 1200px) {
+    .navbarmobiile{
+        display: none;
+    }
+}
+
+/* ecran phone kely*/
+@media (max-width: 768px) {
+    .navbar{
+        display: none;
+    }
+    .navbarmobiile{
+        display: block;
+    }
+    .cvmobile{
+        display: block;
+        z-index: 1000;
+    }
+}
+
+/* ecran phone kely be*/
+@media (max-width: 480px) {
+    .navbar{
+        display: none;
+    }
+    .cvmobile{
+        display: block  ;
+        z-index: 1000;
+    }
 }

@@ -10,13 +10,13 @@ const Competences: React.FC = () => {
     const [datacompetence] = useState<SkillItems[]>(Datacompetence)
     return (
         <Fragment>
-            <div className=" gap-6 p-4 text-gray-400">
+            <div className=" gap-4  text-gray-400">
                 <h1 className="font-bold text-3xl text-white pb-12">Mes compétences</h1>
 
-                <div className={`${s.boxparentskills} grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6`}>
+                <div className={`${s.boxparentskills} grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6 mb-10`}>
                     {datacompetence.map((item, index) => (
                         <div className={`${s.boxchildparents}  rounded-lg  `} key={index} >
-                            <div className={`${s.childbox} flex items-center gap-2 p-6`}
+                            <div className={`${s.childbox} flex items-center   `}
                              style={{ animationDelay: `${index * 0.5}s` }}>
                                 <div className="flex items-center justify-center rounded-full p-3 ">
                                     {item.icon}
