@@ -1,0 +1,17 @@
+.childbox{
+    background-color: green;
+}
+
+.profil {
+    background-color: red;
+
+}
+
+
+
+.profil img {
+ 
+    border-radius: 2rem;
+    width: 100%;
+    background-color: violet;
+}
