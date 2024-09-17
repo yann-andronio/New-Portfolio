@@ -1,0 +1,23 @@
+
+.navparents{
+   
+    background-color: violet;
+
+}
+
+.active{
+    color: red;
+}
+
+.Non_active{
+    color: blue;
+}
+
+.navNavLink{
+    top: 32px;
+    right: 32px;
+    background-color: maroon;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 17px;
+    
+}
