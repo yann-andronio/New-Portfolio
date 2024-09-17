@@ -2,6 +2,7 @@ import { Fragment } from "react/jsx-runtime"
 import Navbar from "../navbar/Navbar"
 import s from "./rigth.module.css"
 import Doing from "../doing/Doing"
+import Competences from "../competences/Competences"
 
 const Rigth: React.FC = () => {
    return (
@@ -22,6 +23,7 @@ const Rigth: React.FC = () => {
                   </p>
 
                   <Doing />
+                  <Competences/>
 
                </div>
             </div>
