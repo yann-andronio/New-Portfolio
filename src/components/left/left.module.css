@@ -5,7 +5,9 @@
 }
 
 
-
+.fullname{
+    font-size: 1.6rem;
+}
 
 
 .profil img {
@@ -39,4 +41,11 @@
 
 .name{
     border-bottom: solid 2px #373330;
+}
+
+.CV{
+    background-color: #434135;
+    width: 75%;
+    margin-bottom: 1rem;
+    color: rgb(183, 153, 80);
 }
