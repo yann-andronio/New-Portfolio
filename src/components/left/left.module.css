@@ -1,9 +1,15 @@
+
+.boxparents{
+    background-color: #2A2B26;
+    
+}
+
 .childbox{
-    background-color: green;
+    /* background-color: green; */
 }
 
 .profil {
-    background-color: red;
+    /* background-color: red; */
 
 }
 
@@ -13,5 +19,14 @@
  
     border-radius: 2rem;
     width: 100%;
-    background-color: violet;
+    background-color: #534E3B;
+}
+
+.function{
+    background-color: #434135;
+    width: 100%;
+}
+
+.icon{
+    background-color: maroon;
 }
