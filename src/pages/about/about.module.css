@@ -13,8 +13,26 @@
 
 @media (max-width: 1200px) {}
 
+
+
+/* tablette */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .Boxparents {
+        margin: 0 0;
+    }
+
+    .leftbox {
+        display: none;
+    }
+
+    .rigthBox {
+        margin-left: 0;
+    }
+}
+
+
 /* ecran phone kely*/
-@media (max-width: 768px) {
+@media (max-width: 767px) {
 
     /* .BoxChild{
         flex-direction: column;

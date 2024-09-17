@@ -9,7 +9,7 @@ const Doing: React.FC = () => {
 
     return (
         <Fragment>
-            <div className=" gap-6 p-4 text-gray-400">
+            <div className=" gap-6  text-gray-400">
                 <h1 className="font-bold text-3xl text-white pb-12">Que Fais-je ?</h1>
 
                 <div className={`${s.boxparentsdoing} grid grid-cols-1 sm:grid-cols-2 gap-6`}>

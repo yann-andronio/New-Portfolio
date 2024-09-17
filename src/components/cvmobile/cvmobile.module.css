@@ -59,12 +59,23 @@
   
 }
 
-/* ecran phone kely*/
-@media (max-width: 768px) {
+/* tablette */
+@media (min-width: 769px) and (max-width: 1024px) {
 
+}
+
+
+/* ecran phone kely*/
+@media (max-width: 767px) {
+ 
+}
+@media (max-width: 768px) {
+  
+
+   
 }
 
 /* ecran phone kely be*/
 @media (max-width: 480px) {
-
+   
 }

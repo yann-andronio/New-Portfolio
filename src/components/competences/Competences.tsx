@@ -11,7 +11,7 @@ const Competences: React.FC = () => {
     return (
         <Fragment>
             <div className=" gap-4  text-gray-400">
-                <h1 className="font-bold text-3xl text-white pb-12">Mes compétences</h1>
+                <h1 className="font-bold text-3xl text-white pb-12 pt-12">Mes compétences</h1>
 
                 <div className={`${s.boxparentskills} grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6 mb-10`}>
                     {datacompetence.map((item, index) => (

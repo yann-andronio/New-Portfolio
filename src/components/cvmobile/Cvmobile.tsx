@@ -66,7 +66,7 @@ const Cvmobile: React.FC = () => {
                             </div>
                         ))}
 
-                        <div className={`${s.socialmedia} flex justify-center   gap-4 p-5`}>
+                        <div className={`${s.socialmedia} flex justify-center gap-4 p-5`}>
                             {dataSocialmedia.map((item, index) => (
                                 <a key={index} href={item.link} target="_blank" className="transition-transform duration-300 hover:scale-125">
                                     {item.icon}
