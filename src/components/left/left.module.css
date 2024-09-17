@@ -1,32 +1,42 @@
-
-.boxparents{
+.boxparents {
     background-color: #2A2B26;
-    
-}
-
-.childbox{
-    /* background-color: green; */
-}
-
-.profil {
-    /* background-color: red; */
+    height: 50%;
 
 }
+
+
 
 
 
 .profil img {
- 
+
     border-radius: 2rem;
     width: 100%;
     background-color: #534E3B;
 }
 
-.function{
+.function {
     background-color: #434135;
     width: 100%;
 }
 
-.icon{
-    background-color: maroon;
+.icones {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    background-color: white;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+.icones:hover{
+    transform: 0.3s;
+    transform: scale(1.09);
+}
+
+
+.boxparentsadress {
+    padding: 1rem;
+}
+
+.name{
+    border-bottom: solid 2px #373330;
 }

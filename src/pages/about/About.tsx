@@ -9,7 +9,7 @@ const About: React.FC = () => {
         <Fragment>
             <div className={`${s.Boxparents}`}>
                 <div className={`${s.BoxChild} flex`}>
-                    <div className={`${s.leftbox}`}>
+                    <div className={`${s.leftbox} fixed`}>
                         <Left />
                     </div>
 

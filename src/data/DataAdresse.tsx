@@ -15,25 +15,25 @@ const DataAdresse: AdresseItem[] = [
     {
         id: 1,
         type: "Email",
-        icon: <FaEnvelope color="red" size={40}  />,
+        icon: <FaEnvelope color="#B79950" size={20}  />,
         info: "todiveloyannandronio@gmail.com"
     },
     {
         id: 2,
         type: "Phone",
-        icon: <IoPhonePortraitSharp color="blue" size={40}  />,
+        icon: <IoPhonePortraitSharp color="#B79950" size={20}  />,
         info: "+261 342290407"
     },
     {
         id: 3,
         type: "Localisation",
-        icon: <FaMapMarkerAlt color="blue" size={40} />,
+        icon: <FaMapMarkerAlt color="#B79950" size={20} />,
         info: "123 Main St, City, Country"
     },
     {
         id: 4,
         type: "Anniversaire",
-        icon: <FaBirthdayCake color="orange" size={40}  />,
+        icon: <FaBirthdayCake color="#B79950" size={20}  />,
         info: "May 2, 2005"
     }
 ];
