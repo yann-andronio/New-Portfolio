@@ -1,0 +1,10 @@
+
+.titleabout::before{
+    width: 7%;
+    height: 5px;
+    content: "";
+    left: 0;
+    position: absolute;
+    bottom: -5px;
+    background-color:  rgb(183, 153, 80);;
+}

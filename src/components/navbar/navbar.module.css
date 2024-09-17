@@ -6,17 +6,21 @@
 }
 
 .active{
-    color: red;
+    color: rgb(183, 153, 80);
+    font-size: 1rem;
+    font-weight: 700;
 }
 
 .Non_active{
-    color: blue;
+    color: white;
+    font-size: 1rem;
+    font-weight: 700;
 }
 
 .navNavLink{
     top: 32px;
     right: 32px;
-    background-color: maroon;
+    background-color: #534E3B;;
     border-top-right-radius: 10px;
     border-bottom-left-radius: 17px;
     
