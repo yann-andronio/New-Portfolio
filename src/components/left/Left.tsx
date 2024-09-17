@@ -14,7 +14,7 @@ const Left: React.FC = () => {
         <Fragment>
             <div className={`${s.boxparents} max-w-96 rounded-xl shadow-lg `}>
                 <div className={`${s.childbox} flex flex-col w-full justify-center items-center  h-full`}>
-                    <div className={`${s.profil} px-20 pt-10`}>
+                    <div className={`${s.profil} px-24 pt-4`}>
                         <img src="./image/1.png" width="100%" alt="" className="p-9" />
                     </div>
                     <div className={`${s.name} flex flex-col justify-center items-center px-10 py-5`}>
@@ -22,10 +22,10 @@ const Left: React.FC = () => {
                             <h1>Yann Andronio</h1>
                         </div>
                         <div className={`${s.function} flex justify-center font-semibold text-gray-400 mt-3 p-2 rounded-lg text-xl`}>
-                            <h2>Full Stack Developer</h2>
+                            <h2>Full Stack Developer JS</h2>
                         </div>
                     </div>
-                    <div className={`${s.adresse} px-5 py-4`}>
+                    <div className={`${s.adresse} `}>
                         {dataAdresse.map((item, index) => (
                             <div className={`${s.boxparentsadress} flex gap-5`} key={index}>
                                 <div

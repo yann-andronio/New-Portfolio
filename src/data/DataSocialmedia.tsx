@@ -12,22 +12,22 @@ export interface MediaItems {
 const DataSocialmedia: MediaItems[] = [
   {
     id: 1,
-    icon: <FaFacebook color="#4267B2" size={40} />, 
+    icon: <FaFacebook color="whitesmoke" size={40} />, 
     link: "https://www.facebook.com/"
   },
   {
     id: 2,
-    icon: <FaInstagram color="#C13584" size={40} />, 
+    icon: <FaInstagram color="whitesmoke" size={40} />, 
     link: "https://www.instagram.com/"
   },
   {
     id: 3,
-    icon: <FaGithub color="#333" size={40} />,
+    icon: <FaGithub color="whitesmoke" size={40} />,
     link: "https://github.com/yourprofile"
   },
   {
     id: 4,
-    icon: <FaLinkedin color="#0077B5" size={40} />, 
+    icon: <FaLinkedin color="whitesmoke" size={40} />, 
     link: "https://www.linkedin.com/"
   }
 ];

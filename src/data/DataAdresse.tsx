@@ -28,14 +28,14 @@ const DataAdresse: AdresseItem[] = [
         id: 3,
         type: "Localisation",
         icon: <FaMapMarkerAlt color="#B79950" size={20} />,
-        info: "123 Main St, City, Country"
+        info: "Lot VT 3A Bis ZAI Andohanihato Ambohipo"
     },
-    {
-        id: 4,
-        type: "Anniversaire",
-        icon: <FaBirthdayCake color="#B79950" size={20}  />,
-        info: "May 2, 2005"
-    }
+    // {
+    //     id: 4,
+    //     type: "Anniversaire",
+    //     icon: <FaBirthdayCake color="#B79950" size={20}  />,
+    //     info: "May 2, 2005"
+    // }
 ];
 
 export default DataAdresse;

@@ -18,8 +18,8 @@
 }
 
 .navNavLink{
-    top: 32px;
-    right: 32px;
+    top: 0;
+    right: 0;
     background-color: #534E3B;;
     border-top-right-radius: 10px;
     border-bottom-left-radius: 17px;
