@@ -1,14 +1,22 @@
 import { Fragment } from "react/jsx-runtime"
+import s from "./about.module.css"
 
 const About: React.FC = () => {
 
 
     return (
         <Fragment>
-            <h1 className="text-3xl font-bold underline  text-blue-500">
-                Hello world!
-            </h1>
-            <h1>bonjour</h1>
+            <div className={`${s.Boxparents}`}>
+                <div className={`${s.BoxChild} flex`}>
+                    <div className={`${s.leftbox}`}>
+
+                    </div>
+
+                    <div className={`${s.rigthBox}`}>
+
+                    </div>
+                </div>
+            </div>
         </Fragment>
     )
 }
