@@ -1,14 +1,24 @@
 import { Fragment } from 'react'
+import { Route, Routes, BrowserRouter } from 'react-router-dom'
 
 import './App.css'
+import About from './pages/about/About'
 
 function App() {
 
 
   return (
-   <Fragment>
+    <Fragment>
+      <BrowserRouter>
+        <Routes>
 
-   </Fragment>
+          <Route path="/" element={<About/>} />
+          
+
+        </Routes>
+      </BrowserRouter>
+
+    </Fragment>
   )
 }
 
