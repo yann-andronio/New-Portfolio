@@ -12,7 +12,7 @@ const Left: React.FC = () => {
 
     return (
         <Fragment>
-            <div className={`${s.boxparents} max-w-96 rounded-xl shadow-lg `}>
+            <div className={`${s.boxparents} rounded-xl shadow-lg `}>
                 <div className={`${s.childbox} flex flex-col w-full justify-center items-center  h-full`}>
                     <div className={`${s.profil} px-24 pt-4`}>
                         <img src="./image/1.png" width="100%" alt="" className="p-9" />

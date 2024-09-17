@@ -14,7 +14,7 @@ const Rigth: React.FC = () => {
             <div className={`${s.navbar} relative`}>
                <Navbar />
             </div>
-            <div className={`${s.cvmobile} `}>
+            <div className={`${s.cvmobile}  `}>
                <Cvmobile />
             </div>
 

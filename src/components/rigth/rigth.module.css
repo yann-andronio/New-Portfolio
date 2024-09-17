@@ -62,8 +62,8 @@
     }
 
     .cvmobile {
-        display: block;
-        z-index: 1000;
+        justify-content: center;
+        display: flex;
     }
 
     .titleabout {
@@ -85,7 +85,8 @@
     }
 
     .cvmobile {
-        display: block;
+        justify-content: center;
+        display: flex;
         z-index: 1000;
     }
 }
