@@ -1,6 +1,6 @@
 import { ReactElement } from 'react';
 import { FaHtml5, FaCss3Alt, FaBootstrap, FaReact, FaNodeJs, FaDatabase } from 'react-icons/fa';
-import { SiTailwindcss, SiCsharp, SiJavascript } from 'react-icons/si';
+import { SiTailwindcss, SiCsharp, SiJavascript , SiTypescript } from 'react-icons/si';
 import { SiAdobephotoshop } from 'react-icons/si';
 import { FaBolt } from 'react-icons/fa';
 
@@ -57,6 +57,13 @@ const Datacompetence: SkillItems[] = [
     icon: <SiAdobephotoshop color="#31A8FF" size={30} />,
     name: "Photoshop"
   },
+  {
+    id: 10,
+    icon: <SiTypescript color="#3178C6" size={30} />,
+    name: "TypeScript",
+   
+},
+  
 
   // {
   //   id: 10,

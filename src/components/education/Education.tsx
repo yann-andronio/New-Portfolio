@@ -1,6 +1,7 @@
 import { Fragment } from "react";
 import s from "./education.module.css";
 import { FaGraduationCap } from 'react-icons/fa';
+import { motion } from "framer-motion";
 interface EducationItem {
     date: string;
     title: string;
@@ -29,16 +30,19 @@ const Education: React.FC = () => {
     return (
         <Fragment>
             <div className="entete flex gap-4 text-center">
-            <div className={`${s.logoo} `} >
-                <FaGraduationCap size={20} color="rgb(183, 153, 80)" />
-                </div>
+                <motion.div
+                    animate={{ scale: [1, 1.1, 1] }}
+                    transition={{ repeat: Infinity, duration: 2, ease: "linear" }}
+                    className={`${s.logoo} `} >
+                    <FaGraduationCap size={20} color="rgb(183, 153, 80)" />
+                </motion.div>
                 <div className="tille">
-                <h3 className="text-3xl font-semibold tracking-wide">Education</h3>
+                    <h3 className="text-3xl font-semibold tracking-wide">Education</h3>
                 </div>
-                </div>
-               
+            </div>
 
-          
+
+
             <section className=" text-white">
                 <div className="container max-w-5xl  py-12 mx-auto">
                     <div className="grid gap-4 mx-4 sm:grid-cols-12">

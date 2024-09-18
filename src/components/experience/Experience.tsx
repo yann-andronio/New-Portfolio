@@ -1,6 +1,8 @@
 import { Fragment } from "react/jsx-runtime"
 import { FaBriefcase } from 'react-icons/fa';
 import s from "./experience.module.css";
+import { motion } from 'framer-motion';
+
 
 interface EducationItem {
     date: string;
@@ -30,9 +32,12 @@ const Experience: React.FC = () => {
     return (
         <Fragment>
             <div className="entete flex gap-4 text-center">
-                <div className={`${s.logoo} `} >
+                <motion.div
+                    animate={{ scale: [1 ,1.1, 1 ]   }}
+                    transition={{ repeat: Infinity, duration: 2, ease: "linear" }}
+                    className={`${s.logoo} `} >
                     <FaBriefcase size={20} color="rgb(183, 153, 80)" />
-                </div>
+                </motion.div>
                 <div className="tille">
                     <h3 className="text-3xl font-semibold tracking-wide">Exprérience</h3>
                 </div>

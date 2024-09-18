@@ -1,9 +1,8 @@
 import { Fragment } from "react/jsx-runtime";
 import s from "./skills.module.css";
-import { FaHtml5, FaCss3Alt, FaBootstrap, FaReact, FaDatabase ,  } from 'react-icons/fa';
-import { SiTailwindcss, SiCsharp, SiJavascript, SiExpress } from 'react-icons/si';
+import { FaHtml5, FaCss3Alt, FaBootstrap, FaReact, FaDatabase, } from 'react-icons/fa';
+import { SiTailwindcss, SiCsharp, SiJavascript, SiExpress ,SiTypescript } from 'react-icons/si';
 import { SiAdobephotoshop } from 'react-icons/si';
-
 const Skills: React.FC = () => {
 
     interface Dataskillsitem {
@@ -16,59 +15,64 @@ const Skills: React.FC = () => {
         {
             icon: <FaReact color="#61DAFB" size={30} />,
             name: "React.js",
-            progressbar: 45
+            progressbar: 70
         },
         {
             icon: <FaHtml5 color="#E34F26" size={30} />,
             name: "HTML",
-            progressbar: 80
+            progressbar: 85
         },
         {
             icon: <FaCss3Alt color="#1572B6" size={30} />,
             name: "CSS",
-            progressbar: 80
+            progressbar: 85
         },
         {
             icon: <SiJavascript color="#F7DF1E" size={30} />,
             name: "JavaScript",
-            progressbar: 80
+            progressbar: 70
         },
         {
             icon: <SiTailwindcss color="#06B6D4" size={30} />,
             name: "Tailwind CSS",
-            progressbar: 80
+            progressbar: 60
         },
         {
             icon: <FaBootstrap color="#563D7C" size={30} />,
             name: "Bootstrap",
-            progressbar: 80
+            progressbar: 65
         },
         {
             icon: <SiExpress color="#000000" size={30} />,
             name: "Express.js",
-            progressbar: 70
+            progressbar: 50
         },
         {
             icon: <FaDatabase color="#47A248" size={30} />,
             name: "MongoDB",
-            progressbar: 80
+            progressbar: 60
         },
         {
             icon: <SiCsharp color="#47A248" size={30} />,
-            name: "c#(unity)",
-            progressbar: 80
+            name: "C# (Unity)",
+            progressbar: 55
         },
         {
             icon: <SiAdobephotoshop color="#31A8FF" size={30} />,
             name: "Photoshop",
-            progressbar: 80
+            progressbar: 40
         },
-    ]
+        {
+            icon: <SiTypescript color="#3178C6" size={30} />,
+            name: "TypeScript",
+            progressbar: 60
+        },
+    ];
 
     return (
         <Fragment>
-            <div className="gap-4 text-gray-400">
-                <h1 className="font-bold text-3xl text-white pb-12 pt-12">Compétences</h1>
+            <div className=" mb-24">
+                <h1 className="font-bold text-3xl text-white pb-12 pt-4">Compétences</h1>
                 <div className={`${s.logoo}`}>
                     {Dataskills.map((item, index) => {
                         return (
