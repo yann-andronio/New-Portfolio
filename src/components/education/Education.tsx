@@ -1,5 +1,6 @@
 import { Fragment } from "react";
 import s from "./education.module.css";
+import { PiBookOpenLight } from "react-icons/pi";
 
 interface TimelineItem {
     date: string;
@@ -11,25 +12,36 @@ const timelineData: TimelineItem[] = [
     {
         date: '2022 - 2024',
         title: 'Institut Supérieur Polytechhnique de Madagascar',
-        description: 'Pellentesque feugiat ante at nisl efficitur, in mollis orci scelerisque. Interdum et malesuada fames ac ante ipsum primis in faucibus.',
+        description: "Étudiant en 2ème année à l'Institut Supérieur Polytechnique de Madagascar, je viens de passer en Licence 3 (L3) dans la filière Informatique. ",
     },
     {
-        date: 'Jul 2019',
-        title: 'Aliquam sit amet nunc ut',
-        description: 'Morbi vulputate aliquam libero non dictum. Aliquam sit amet nunc ut diam aliquet tincidunt nec nec dui. Donec mollis turpis eget egestas sodales.',
+        date: '2022 - 2023',
+        title: 'Alliance française ',
+        description: 'Je suis également titulaire des diplômes DELF/DALF B1 et B2, attestant de mes compétences en français',
     },
     {
-        date: 'Jan 2016',
-        title: 'Pellentesque habitant morbi',
-        description: 'Suspendisse tincidunt, arcu nec faucibus efficitur, justo velit consectetur nisl, sit amet condimentum lacus orci nec purus. Mauris quis quam suscipit, vehicula felis id, vehicula enim.',
+        date: '2021 - 2022',
+        title: 'Lycée saint joseph de cluny',
+        description: " Titulaire d'un baccalauréat série D obtenu au lycée Saint Joseph de Cluny",
     },
 ];
 
-const Education: React.FC = ()=> {
+const Education: React.FC = () => {
     return (
         <Fragment>
+            <div className="entete flex gap-4 text-center">
+            <div className={`${s.logoo} `} >
+                <PiBookOpenLight size={20} color="rgb(183, 153, 80)" />
+                </div>
+                <div className="tille">
+                <h3 className="text-3xl font-semibold tracking-wide">Education</h3>
+                </div>
+                </div>
+               
+
+          
             <section className=" text-white">
-                <div className="container max-w-5xl px-4 py-12 mx-auto">
+                <div className="container max-w-5xl  py-12 mx-auto">
                     <div className="grid gap-4 mx-4 sm:grid-cols-12">
                         <div className="relative col-span-12 px-4 space-y-6 sm:col-span-9">
                             <div className={`${s.ligne}  col-span-12 space-y-12 relative px-4 sm:col-span-8 sm:space-y-8 sm:before:absolute sm:before:top-2 sm:before:bottom-0 sm:before:w-0.5 sm:before:-left-3 before:dark:bg-lignecolor `}>
@@ -40,7 +52,7 @@ const Education: React.FC = ()=> {
                                     >
                                         <h3 className="text-xl font-semibold tracking-wide">{item.title}</h3>
                                         <time className={`${s.date} text-xl font-semibold tracking-wide uppercase`}>{item.date}</time>
-                                      
+
                                         <p className="mt-3">{item.description}</p>
                                     </div>
                                 ))}
@@ -53,4 +65,4 @@ const Education: React.FC = ()=> {
     );
 }
 
-export default Education ; 
+export default Education; 

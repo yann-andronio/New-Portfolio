@@ -28,10 +28,7 @@
 
 
 
-.educationbox {
-    margin: 0; /* Assurez-vous qu'il n'y a pas de marge inutile */
-    padding: 0; /* Assurez-vous qu'il n'y a pas de padding inutile */
-}
+
 
 @media (max-width: 1200px) {
     .navbarmobiile {
