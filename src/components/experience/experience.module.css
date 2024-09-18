@@ -1,0 +1,30 @@
+.logoo {
+    border-radius: 8px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+    padding: 12px;
+
+}
+
+
+.date {
+    color: rgb(183, 153, 80);
+}
+
+
+.boribory {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.boribory::before {
+    content: "";
+    position: absolute;
+    top: 0.5rem;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 9999px;
+    left: -2.1875rem;
+    z-index: 1;
+    background-color: rgb(183, 153, 80);
+}

@@ -1,11 +1,11 @@
 import { Fragment } from "react/jsx-runtime"
 import Navbar from "../navbar/Navbar"
 import s from "./rigthresume.module.css"
-import Doing from "../doing/Doing"
-import Competences from "../competences/Competences"
 import Navmobile from "../navmobile/Navmobile"
 import Cvmobile from "../cvmobile/Cvmobile"
 import Education from "../education/Education"
+import Experience from "../experience/Experience"
+import Skills from "../skills/Skills"
 
 const Rigthresume: React.FC = () => {
     return (
@@ -25,12 +25,12 @@ const Rigthresume: React.FC = () => {
                         <div className={`${s.educationbox} text-white leading-relaxed mb-4`}>
                             <Education />
                         </div>
-                        <p className="text-base leading-relaxed mb-3">
-                            Je suis aussi disponible pour des missions freelance ou pour travailler sur des projets intéressants. N'hésitez pas à me contacter si vous avez une idée de projet ou si vous voulez discuter d'une collaboration.
-                        </p>
+                        <div className={`${s.experiencebox} text-white leading-relaxed mb-4`}>
+                           <Experience />
+                        </div>
 
-                        <Doing />
-                        <Competences />
+                        <Skills/>
+                      
 
                     </div>
                 </div>
