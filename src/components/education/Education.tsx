@@ -1,65 +1,56 @@
-import Timeline from '@mui/lab/Timeline';
-import TimelineItem from '@mui/lab/TimelineItem';
-import TimelineSeparator from '@mui/lab/TimelineSeparator';
-import TimelineConnector from '@mui/lab/TimelineConnector';
-import TimelineContent from '@mui/lab/TimelineContent';
-import TimelineDot from '@mui/lab/TimelineDot';
-import { Typography, Box } from '@mui/material';
-import { Fragment } from 'react/jsx-runtime';
+import { Fragment } from "react";
+import s from "./education.module.css";
 
-export default function Education() {
+interface TimelineItem {
+    date: string;
+    title: string;
+    description: string;
+}
+
+const timelineData: TimelineItem[] = [
+    {
+        date: '2022 - 2024',
+        title: 'Institut Supérieur Polytechhnique de Madagascar',
+        description: 'Pellentesque feugiat ante at nisl efficitur, in mollis orci scelerisque. Interdum et malesuada fames ac ante ipsum primis in faucibus.',
+    },
+    {
+        date: 'Jul 2019',
+        title: 'Aliquam sit amet nunc ut',
+        description: 'Morbi vulputate aliquam libero non dictum. Aliquam sit amet nunc ut diam aliquet tincidunt nec nec dui. Donec mollis turpis eget egestas sodales.',
+    },
+    {
+        date: 'Jan 2016',
+        title: 'Pellentesque habitant morbi',
+        description: 'Suspendisse tincidunt, arcu nec faucibus efficitur, justo velit consectetur nisl, sit amet condimentum lacus orci nec purus. Mauris quis quam suscipit, vehicula felis id, vehicula enim.',
+    },
+];
+
+const Education: React.FC = ()=> {
     return (
         <Fragment>
-        <Box sx={{ maxWidth: 600, mt: 4, p: 2  }}>
-            <Timeline position="right"> 
-                <TimelineItem>
-                    <TimelineSeparator>
-                        <TimelineDot sx={{ bgcolor: 'white' }} />
-                        <TimelineConnector sx={{ bgcolor: 'white' }} />
-                    </TimelineSeparator>
-                    <TimelineContent>
-                        <Typography variant="h6" sx={{ color: 'white' }}>2023</Typography>
-                        <Typography variant="h6" sx={{ color: 'white' }}>
-                            Diplôme en Développement Web
-                        </Typography>
-                        <Typography sx={{ color: 'white' }}>
-                            J'ai terminé mon diplôme en développement web avec une spécialisation en React et MERN stack.
-                        </Typography>
-                    </TimelineContent>
-                </TimelineItem>
-
-                <TimelineItem>
-                    <TimelineSeparator>
-                        <TimelineDot sx={{ bgcolor: 'white' }} />
-                        <TimelineConnector sx={{ bgcolor: 'white' }} />
-                    </TimelineSeparator>
-                    <TimelineContent>
-                        <Typography variant="h6" sx={{ color: 'white' }}>2022</Typography>
-                        <Typography variant="h6" sx={{ color: 'white' }}>
-                            Stage chez Super U
-                        </Typography>
-                        <Typography sx={{ color: 'white' }}>
-                            J'ai travaillé sur la gestion des produits et le développement d'une plateforme de vente en ligne.
-                        </Typography>
-                    </TimelineContent>
-                </TimelineItem>
-
-                <TimelineItem>
-                    <TimelineSeparator>
-                        <TimelineDot sx={{ bgcolor: 'white' }} />
-                    </TimelineSeparator>
-                    <TimelineContent>
-                        <Typography variant="h6" sx={{ color: 'white' }}>2021</Typography>
-                        <Typography variant="h6" sx={{ color: 'white' }}>
-                            Certification MERN Stack
-                        </Typography>
-                        <Typography sx={{ color: 'white' }}>
-                            J'ai obtenu une certification en MERN Stack après avoir terminé un programme de formation intensif.
-                        </Typography>
-                    </TimelineContent>
-                </TimelineItem>
-            </Timeline>
-        </Box>
+            <section className=" text-white">
+                <div className="container max-w-5xl px-4 py-12 mx-auto">
+                    <div className="grid gap-4 mx-4 sm:grid-cols-12">
+                        <div className="relative col-span-12 px-4 space-y-6 sm:col-span-9">
+                            <div className={`${s.ligne}  col-span-12 space-y-12 relative px-4 sm:col-span-8 sm:space-y-8 sm:before:absolute sm:before:top-2 sm:before:bottom-0 sm:before:w-0.5 sm:before:-left-3 before:dark:bg-lignecolor `}>
+                                {timelineData.map((item, index) => (
+                                    <div
+                                        key={index}
+                                        className={`${s.boribory}`}
+                                    >
+                                        <h3 className="text-xl font-semibold tracking-wide">{item.title}</h3>
+                                        <time className={`${s.date} text-xl font-semibold tracking-wide uppercase`}>{item.date}</time>
+                                      
+                                        <p className="mt-3">{item.description}</p>
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </Fragment>
     );
 }
+
+export default Education ; 
