@@ -21,7 +21,7 @@ const Cvmobile: React.FC = () => {
             <div className={`${s.boxparents} max-w-96 rounded-xl shadow-lg relative`}>
                 <div className={`${s.childbox} flex flex-col w-full justify-center items-center h-full`}>
                     <div className={`${s.profil} px-24 pt-4`}>
-                        <img src="./image/1.png" width="100%" alt="" className="p-9" />
+                        <img src="./image/11.jpg" width="100%" alt="" className="" />
                     </div>
                     <div className={`${s.name} flex flex-col justify-center items-center px-10 py-5`}>
                         <div className={`${s.fullname} flex justify-center font-semibold text-white items-center`}>

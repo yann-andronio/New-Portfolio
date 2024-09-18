@@ -49,6 +49,13 @@
     width: 75%;
     margin-bottom: 1rem;
     color: rgb(183, 153, 80);
+    transition: 0.4s;
+}
+.CV:hover{
+    
+  transform: scale(1.04);
+  color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
 }
 
 @media (max-width: 1200px) {

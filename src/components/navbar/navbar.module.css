@@ -8,12 +8,18 @@
     color: rgb(183, 153, 80);
     font-size: 1rem;
     font-weight: 700;
+    
 }
 
 .Non_active {
     color: white;
     font-size: 1rem;
     font-weight: 700;
+    transition: 0.3s;
+}
+.Non_active:hover {
+    color: rgb(183, 153, 80);
+    transition: 0.3s;
 }
 
 .navNavLink {
