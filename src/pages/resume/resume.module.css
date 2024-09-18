@@ -1,0 +1,66 @@
+.Boxparents {
+    background-color: #181C1F;
+    padding: 1rem 1rem;
+
+}
+
+.rigthBox {
+    /* ml-[28%] */
+    background-color: #2c2b27;
+    margin-left: 28%
+}
+
+
+@media (max-width: 1200px) {}
+
+
+
+/* tablette */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .Boxparents {
+        margin: 0 0;
+    }
+
+    .leftbox {
+        display: none;
+    }
+
+    .rigthBox {
+        margin-left: 0;
+    }
+}
+
+
+/* ecran phone kely*/
+@media (max-width: 767px) {
+
+    /* .BoxChild{
+        flex-direction: column;
+    } */
+    .Boxparents {
+        margin: 0 0;
+    }
+
+    .leftbox {
+        display: none;
+    }
+
+    .rigthBox {
+        margin-left: 0;
+    }
+}
+
+/* ecran phone kely be*/
+@media (max-width: 480px) {
+    .Boxparents {
+        padding: 0;
+    }
+
+    .leftbox {
+        display: none;
+    }
+
+    .rigthBox {
+        margin-left: 0;
+    }
+}
