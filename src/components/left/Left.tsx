@@ -15,7 +15,7 @@ const Left: React.FC = () => {
             <div className={`${s.boxparents} rounded-xl shadow-lg `}>
                 <div className={`${s.childbox} flex flex-col w-full justify-center items-center  h-full`}>
                     <div className={`${s.profil} px-24 pt-4`}>
-                        <img src="./image/11.jpg" width="100%" alt="" className="" />
+                        <img src="./image/5.png" width="100%" alt="" className="" />
                     </div>
                     <div className={`${s.name} flex flex-col justify-center items-center px-10 py-5`}>
                         <div className={`${s.fullname} flex justify-center font-semibold text-white items-center `}>

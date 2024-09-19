@@ -27,26 +27,44 @@ const Projectportfolio: React.FC = () => {
                 </h1>
                 <h1
                     onClick={() => Filtebytype("Web")}
-                    className={` font-semibold text-xl cursor-pointer ${Typeactive === "Web" ? s.active : s.nonactivve}`}
+                    className={` font-semibold text-xl cursor-pointer hidden md:block lg:block   ${Typeactive === "Web" ? s.active : s.nonactivve}`}
                 >
                     Site web
                 </h1>
                 <h1
+                    onClick={() => Filtebytype("Web")}
+                    className={` font-semibold text-xl cursor-pointer lg:hidden md:hidden ${Typeactive === "Web" ? s.active : s.nonactivve}`}
+                >
+                    web
+                </h1>
+                {/* <h1
                     onClick={() => Filtebytype("Mobile")}
-                    className={` font-semibold text-xl cursor-pointer ${Typeactive === "Mobile" ? s.active : s.nonactivve}`}
+                    className={` font-semibold text-xl cursor-pointer  hidden md:block lg:block  ${Typeactive === "Mobile" ? s.active : s.nonactivve}`}
                 >
                     Application mobile
                 </h1>
                 <h1
+                    onClick={() => Filtebytype("Mobile")}
+                    className={` font-semibold text-xl cursor-pointer  lg:hidden md:hidden  ${Typeactive === "Mobile" ? s.active : s.nonactivve}`}
+                >
+                     mobile
+                </h1> */}
+                <h1
                     onClick={() => Filtebytype("Jeux vidéo")}
-                    className={` font-semibold text-xl cursor-pointer ${Typeactive === "Jeux vidéo" ? s.active : s.nonactivve}`}
+                    className={` font-semibold text-xl cursor-pointer  hidden md:block lg:block  ${Typeactive === "Jeux vidéo" ? s.active : s.nonactivve}`}
                 >
                     Jeux vidéo
+                </h1>
+                <h1
+                    onClick={() => Filtebytype("Jeux vidéo")}
+                    className={` font-semibold text-xl cursor-pointer lg:hidden md:hidden  ${Typeactive === "Jeux vidéo" ? s.active : s.nonactivve}`}
+                >
+                    Jeux 
                 </h1>
             </div>
 
 
-            <div className={`${s.projectList} mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5`}>
+            <div className={`${s.projectList} mb-12 mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5`}>
                 {Dataptojectfilter.map((item, index) => (
                     <div key={index} className={`${s.projectCard} rounded-3xl p-4`}>
                         <img src={`./image/projet/${item.image}.png`} alt={item.name} className={`${s.projectImage} rounded-lg`} />
