@@ -21,10 +21,10 @@ const Rigth: React.FC = () => {
             <div className={`${s.description} p-8 text-gray-400 relative`}>
                <h1 className={`${s.titleabout} absolute font-bold  text-white pb-4`}>À propos de moi</h1>
                <div className={`${s.descletter} mt-24`}>
-                  <p className="text-base leading-relaxed mb-4">
+                  <p className="text-base text-white leading-relaxed mb-4">
                      Je suis développeur full stack JavaScript, et j'adore créer des sites web et des applications. Je travaille avec des technologies comme React.js pour le front-end et Node.js pour le back-end, et j'utilise MongoDB pour gérer les données. Vous pouvez voir certains de mes projets dans mon portfolio.
                   </p>
-                  <p className="text-base leading-relaxed mb-3">
+                  <p className="text-base leading-relaxed mb-3 text-white">
                      Je suis aussi disponible pour des missions freelance ou pour travailler sur des projets intéressants. N'hésitez pas à me contacter si vous avez une idée de projet ou si vous voulez discuter d'une collaboration.
                   </p>
 
