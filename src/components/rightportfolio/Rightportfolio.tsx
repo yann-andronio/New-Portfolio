@@ -3,11 +3,15 @@ import s from "./rigthportfolio.module.css"
 import Navmobile from "../navmobile/Navmobile"
 import Cvmobile from "../cvmobile/Cvmobile"
 import Navbar from "../navbar/Navbar"
-import Education from "../education/Education"
 import Experience from "../experience/Experience"
 import Skills from "../skills/Skills"
+import Projectportfolio from "../projectportfolio/Projectportfolio"
+
 
 const Rightportfolio: React.FC = () => {
+
+
+
     return (
         <Fragment>
             <div className={`${s.boxparents}`}>
@@ -22,7 +26,7 @@ const Rightportfolio: React.FC = () => {
                     <h1 className={`${s.titleabout} absolute font-bold  text-white pb-4`}>Portfolio</h1>
                     <div className={`${s.descletter} mt-24`}>
                         <div className={`${s.educationbox} text-white leading-relaxed mb-4`}>
-                            <Education />
+                            <Projectportfolio />
                         </div>
                         <div className={`${s.experiencebox} text-white leading-relaxed mb-4`}>
                             <Experience />
