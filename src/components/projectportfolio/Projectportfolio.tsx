@@ -4,6 +4,8 @@ import { useState } from "react";
 import Dataporfolioproject from "../../data/Dataporfolioproject";
 import { projectItems } from "../../data/Dataporfolioproject";
 import { FiExternalLink } from 'react-icons/fi';
+import { motion } from 'framer-motion';
+
 
 const Projectportfolio: React.FC = () => {
     const [Dataptojectfilter, Setdataprojectfilter] = useState<projectItems[]>(Dataporfolioproject);
@@ -59,14 +61,22 @@ const Projectportfolio: React.FC = () => {
                     onClick={() => Filtebytype("Jeux vidéo")}
                     className={` font-semibold text-xl cursor-pointer lg:hidden md:hidden  ${Typeactive === "Jeux vidéo" ? s.active : s.nonactivve}`}
                 >
-                    Jeux 
+                    Jeux
                 </h1>
             </div>
 
 
             <div className={`${s.projectList} mb-12 mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5`}>
                 {Dataptojectfilter.map((item, index) => (
-                    <div key={index} className={`${s.projectCard} rounded-3xl p-4`}>
+                    <motion.div
+                        key={item.id}
+                        // micompte be ty oblige  nle id
+                        className={`${s.projectCard} rounded-3xl p-4`}
+                        initial={{ opacity: 0, scale: 0.8, y: 30 }}
+                        animate={{ opacity: 1, scale: 1, y: 0 }}
+                        exit={{ opacity: 0, scale: 0.8, y: -30 }}
+                        transition={{ duration: 0.6, delay: index * 0.1, type: "spring", stiffness: 150 }}
+                    >
                         <img src={`./image/projet/${item.image}.png`} alt={item.name} className={`${s.projectImage} rounded-lg`} />
                         <h2 className={`${s.projectName} font-bold text-2xl text-gray-300 mt-2`}>{item.name}</h2>
                         <h3 className={`${s.projectType} text-base `}>{item.type}</h3>
@@ -86,7 +96,7 @@ const Projectportfolio: React.FC = () => {
                         >
                             Voir le projet <FiExternalLink className="ml-2" size={18} />
                         </a>
-                    </div>
+                    </motion.div>
                 ))}
             </div>
         </Fragment>

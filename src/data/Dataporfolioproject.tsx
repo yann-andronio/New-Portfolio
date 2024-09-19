@@ -7,6 +7,7 @@ import { TbBrandReactNative } from 'react-icons/tb';
 
 
 export interface projectItems {
+    id?:number ;
     name: string;
     langageIcons: { icon: IconType; color: string }[];
     type: 'Jeux vidéo' | 'Mobile' | 'Web';
@@ -18,6 +19,7 @@ export interface projectItems {
 
 const Dataporfolioproject: projectItems[] = [
     {
+        id: 1, 
         name: "SuperU E-commerce",
         langageIcons: [
             { icon: SiReact, color: '#61DAFB' },
@@ -31,6 +33,7 @@ const Dataporfolioproject: projectItems[] = [
 
     },
     {
+        id: 2, 
         name: "Portfolio 1",
         langageIcons: [
             { icon: FaHtml5, color: '#E34F26' },
@@ -43,6 +46,7 @@ const Dataporfolioproject: projectItems[] = [
         image: "2",
     },
     {
+        id: 3, 
         name: "Aloalo",
         langageIcons: [
             { icon: SiUnity, color: '#000000' },
@@ -53,6 +57,7 @@ const Dataporfolioproject: projectItems[] = [
         image: "3",
     },
     {
+        id: 4, 
         name: "New portfolio",
         langageIcons: [
             { icon: SiReact, color: '#61DAFB' },
@@ -66,6 +71,7 @@ const Dataporfolioproject: projectItems[] = [
         image: "4",
     },
     {
+        id: 5, 
         name: "Universitech",
         langageIcons: [
             { icon: SiReact, color: '#61DAFB' },
@@ -80,6 +86,7 @@ const Dataporfolioproject: projectItems[] = [
     }
     ,
     {
+        id: 6,
         name: "Webster",
         langageIcons: [
             { icon: SiReact, color: '#61DAFB' },
@@ -93,6 +100,7 @@ const Dataporfolioproject: projectItems[] = [
         image: "6",
     },
     {
+        id: 7,
         name: "Food Shop Service",
         langageIcons: [
 
@@ -106,6 +114,7 @@ const Dataporfolioproject: projectItems[] = [
         image: "7",
     },
     {
+        id: 8,
         name: "Gaming Sector",
         langageIcons: [
             { icon: FaHtml5, color: '#E34F26' },
@@ -117,6 +126,7 @@ const Dataporfolioproject: projectItems[] = [
         image: "8",
     },
     {
+        id: 9, 
         name: "Goball",
         langageIcons: [
             { icon: SiUnity, color: '#000000' },
@@ -127,6 +137,7 @@ const Dataporfolioproject: projectItems[] = [
         image: "9",
     },
     {
+        id: 10, 
         name: "Shape runner",
         langageIcons: [
             { icon: SiUnity, color: '#000000' },
@@ -135,6 +146,17 @@ const Dataporfolioproject: projectItems[] = [
         type: "Jeux vidéo",
         link: "https://travelapp.com",
         image: "10",
+    },
+    {   
+        id: 11, 
+        name: "Aventure Training",
+        langageIcons: [
+            { icon: SiUnity, color: '#000000' },
+            { icon: SiCsharp, color: '#178600' }
+        ],
+        type: "Jeux vidéo",
+        link: "https://travelapp.com",
+        image: "11",
     },
 ];
 
