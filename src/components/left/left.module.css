@@ -81,7 +81,7 @@
 /* Styles hoan Surface Duo 2 mode simple écran */
 @media only screen and (max-width: 1344px) and (max-height: 1892px) {
     .boxparents{
-        max-width: 18rem;
+        max-width: 20rem;
       }
 
       .profil img{

@@ -1,0 +1,96 @@
+.titleabout::before {
+    width: 27%;
+    height: 5px;
+    content: "";
+    left: 0;
+    position: absolute;
+    bottom: -5px;
+    background-color: rgb(183, 153, 80);
+    ;
+}
+
+.descletter {
+    margin-top: 6rem;
+}
+
+.navbarmobiile {
+    display: none;
+}
+
+.cvmobile {
+    display: none;
+}
+
+.titleabout {
+    font-size: 2.25rem;
+    line-height: 2.5rem
+}
+
+
+
+
+
+@media (max-width: 1200px) {
+    .navbarmobiile {
+        display: none;
+    }
+}
+
+/* tablette */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .navbarmobiile {
+        display: none;
+    }
+
+    .navbar {
+        display: block;
+    }
+
+    /* .descletter{
+        margin-top: 6rem;
+    } */
+    .titleabout {
+        font-size: 1.5rem;
+    }
+}
+
+
+/* ecran phone kely*/
+@media (max-width: 767px) {
+    .navbar {
+        display: none;
+    }
+
+    .navbarmobiile {
+        display: block;
+    }
+
+    .cvmobile {
+        justify-content: center;
+        display: flex;
+    }
+
+    .titleabout {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .titleabout {
+        font-size: 1.3rem;
+    }
+}
+
+/* ecran phone kely be*/
+@media (max-width: 480px) {
+    .navbar {
+        display: none;
+    }
+
+    .cvmobile {
+        justify-content: center;
+        display: flex;
+        z-index: 1000;
+    }
+}

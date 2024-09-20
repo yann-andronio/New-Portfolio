@@ -53,4 +53,12 @@
 
 .linkvoir{
     color: rgb(219 159 12);
+    transition: 0.3s;
+
 }
+.linkvoir:hover{
+    color: white;
+    transition: 0.3s;
+    transform: scale(1.05);
+}
+

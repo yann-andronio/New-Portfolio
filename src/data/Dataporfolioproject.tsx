@@ -1,5 +1,5 @@
 import { IconType } from 'react-icons';
-import { SiReact, SiNodedotjs, SiMongodb, SiTypescript, SiUnity, SiCsharp, SiTailwindcss, SiJavascript } from 'react-icons/si';
+import { SiReact, SiNodedotjs, SiMongodb, SiTypescript, SiUnity, SiCsharp, SiTailwindcss, SiJavascript , SiExpress } from 'react-icons/si';
 import { FaHtml5, FaCss3Alt, FaBootstrap, FaReact, FaNodeJs, FaDatabase } from 'react-icons/fa';
 import { SiPhp } from 'react-icons/si';
 
@@ -62,9 +62,10 @@ const Dataporfolioproject: projectItems[] = [
         langageIcons: [
             { icon: SiReact, color: '#61DAFB' },
             { icon: SiTypescript, color: '#3178C6' },
-            { icon: FaHtml5, color: '#E34F26' },
-            { icon: FaCss3Alt, color: '#1572B6' },
+            { icon: FaNodeJs, color: '#68A063' },
             { icon: SiTailwindcss, color: '#06B6D4' },
+            {icon: SiExpress ,  color:"#000000" }, 
+            {icon: SiMongodb ,  color:"#47A248" }
         ],
         type: "Web",
         link: "https://travelapp.com",

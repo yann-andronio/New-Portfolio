@@ -1,0 +1,22 @@
+.logoo {
+    border-radius: 8px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+    padding: 12px;
+    transition: 0.3s;
+
+}
+.logoo:hover {
+   transform: scale(1.05);
+   transition:0.3s; 
+   color: rgb(183, 153, 80);
+
+}
+
+
+.contentmap iframe{
+    transition: 0.3s;
+}
+.contentmap:hover iframe{
+    transition: 0.3s;
+    filter: grayscale(0%);
+}
