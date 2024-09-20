@@ -13,22 +13,22 @@ const DataSocialmedia: MediaItems[] = [
   {
     id: 1,
     icon: <FaFacebook color="whitesmoke" size={40} />, 
-    link: "https://www.facebook.com/"
+    link: "https://web.facebook.com/yann.youker"
   },
   {
     id: 2,
     icon: <FaInstagram color="whitesmoke" size={40} />, 
-    link: "https://www.instagram.com/"
+    link: "https://www.instagram.com/yann_andronio/"
   },
   {
     id: 3,
     icon: <FaGithub color="whitesmoke" size={40} />,
-    link: "https://github.com/yourprofile"
+    link: "https://github.com/yann-andronio"
   },
   {
     id: 4,
     icon: <FaLinkedin color="whitesmoke" size={40} />, 
-    link: "https://www.linkedin.com/"
+    link: "www.linkedin.com/in/yann-andronio-todivelo-💻-254615288"
   }
 ];
 
