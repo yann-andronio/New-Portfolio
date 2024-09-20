@@ -42,7 +42,7 @@ const Dataporfolioproject: projectItems[] = [
             { icon: FaBootstrap, color: '#563D7C' }
         ],
         type: "Web",
-        link: "https://taskmanager.com",
+        link: "https://portfoliotaloha.netlify.app",
         image: "2",
     },
     {
@@ -111,7 +111,7 @@ const Dataporfolioproject: projectItems[] = [
             { icon: FaBootstrap, color: '#563D7C' }
         ],
         type: "Web",
-        link: "https://travelapp.com",
+        link: "https://food-shop-service.netlify.app",
         image: "7",
     },
     {
@@ -123,7 +123,7 @@ const Dataporfolioproject: projectItems[] = [
             { icon: SiJavascript, color: '#F7DF1E' },
         ],
         type: "Web",
-        link: "https://travelapp.com",
+        link: "https://gaming-sector.netlify.app",
         image: "8",
     },
     {
