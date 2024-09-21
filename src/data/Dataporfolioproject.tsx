@@ -1,9 +1,9 @@
 import { IconType } from 'react-icons';
-import { SiReact, SiNodedotjs, SiMongodb, SiTypescript, SiUnity, SiCsharp, SiTailwindcss, SiJavascript , SiExpress } from 'react-icons/si';
-import { FaHtml5, FaCss3Alt, FaBootstrap, FaReact, FaNodeJs, FaDatabase } from 'react-icons/fa';
+import { SiReact, SiMongodb, SiTypescript, SiUnity, SiCsharp, SiTailwindcss, SiJavascript , SiExpress } from 'react-icons/si';
+import { FaHtml5, FaCss3Alt, FaBootstrap,  FaNodeJs,  } from 'react-icons/fa';
 import { SiPhp } from 'react-icons/si';
 
-import { TbBrandReactNative } from 'react-icons/tb';
+// import { TbBrandReactNative } from 'react-icons/tb';
 
 
 export interface projectItems {
@@ -28,7 +28,7 @@ const Dataporfolioproject: projectItems[] = [
             { icon: SiTailwindcss, color: '#06B6D4' },
         ],
         type: "Web",
-        link: "https://superu-project.com",
+        link: "https://superu-ecommerce.netlify.app",
         image: "1",
 
     },
@@ -53,7 +53,7 @@ const Dataporfolioproject: projectItems[] = [
             { icon: SiCsharp, color: '#178600' }
         ],
         type: "Jeux vidéo",
-        link: "https://gamezone.com",
+        link: "./fichier/aloalo.rar",
         image: "3",
     },
     {
@@ -68,7 +68,7 @@ const Dataporfolioproject: projectItems[] = [
             {icon: SiMongodb ,  color:"#47A248" }
         ],
         type: "Web",
-        link: "https://travelapp.com",
+        link: "https://portfolio.com",
         image: "4",
     },
     {
@@ -82,7 +82,7 @@ const Dataporfolioproject: projectItems[] = [
             { icon: SiPhp, color: "#563D7C" },
         ],
         type: "Web",
-        link: "https://travelapp.com",
+        link: "https://univesitech.com",
         image: "5",
     }
     ,
@@ -97,7 +97,7 @@ const Dataporfolioproject: projectItems[] = [
             { icon: SiTailwindcss, color: '#06B6D4' },
         ],
         type: "Web",
-        link: "https://travelapp.com",
+        link: "https://webster.com",
         image: "6",
     },
     {
@@ -145,7 +145,7 @@ const Dataporfolioproject: projectItems[] = [
             { icon: SiCsharp, color: '#178600' }
         ],
         type: "Jeux vidéo",
-        link: "https://travelapp.com",
+        link: "./fichier/ShapeRunner.rar",
         image: "10",
     },
     {   
