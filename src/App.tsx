@@ -1,5 +1,6 @@
 import { Fragment, useState, useEffect } from 'react'
-import { HashRouter as Router, Route, Routes } from 'react-router-dom';import './App.css'
+import { Route, Routes, BrowserRouter } from 'react-router-dom'
+import './App.css'
 import About from './pages/about/About'
 import Resume from './pages/resume/Resume'
 import Portfolio from './pages/portfolio/Portfolio'
@@ -33,15 +34,16 @@ function App() {
       {showWelcome && <Welcome />}
 
 
-      <Router>
-      <Routes>
-        <Route path="/" element={<About />} />
-        <Route path="/resume" element={<Resume />} />
-        <Route path="/portfolio" element={<Portfolio />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="*" element={<Error />} />
-      </Routes>
-    </Router>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<About />} />
+          <Route path="/resume" element={<Resume />} />
+          <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="*" element={<Error />} />
+        </Routes>
+      </BrowserRouter>
+
     </Fragment>
   )
 }
