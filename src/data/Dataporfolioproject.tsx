@@ -68,7 +68,7 @@ const Dataporfolioproject: projectItems[] = [
             {icon: SiMongodb ,  color:"#47A248" }
         ],
         type: "Web",
-        link: "https://portfolio.com",
+        link: "https://yann-portfolio.netlify.app/",
         image: "4",
     },
     {
