@@ -1,0 +1,22 @@
+.welcomescreen {
+  
+  
+    background-color: white;
+    z-index: 9999; 
+  
+    
+ 
+  }
+  
+  .lottieanimation {
+  background-color: white;
+  }
+
+
+
+  @media (max-width: 768px) {
+    .lottieanimation {
+      width: 100%;
+    }
+  }
+  

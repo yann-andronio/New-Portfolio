@@ -1,0 +1,9 @@
+.errorlink{
+    transition: 0.3s;
+    
+}
+.errorlink:hover{
+    transition: 0.3s;
+    transform: scale(1.05);
+
+}
