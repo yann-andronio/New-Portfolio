@@ -35,10 +35,10 @@ function App() {
 
       <Router>
       <Routes>
-        <Route path="/" element={<About />} />
-        <Route path="/resume" element={<Resume />} />
-        <Route path="/portfolio" element={<Portfolio />} />
-        <Route path="/contact" element={<Contact />} />
+        <Route path="New-Portfolio" element={<About />} />
+        <Route path="New-Portfolio/resume" element={<Resume />} />
+        <Route path="New-Portfolio/portfolio" element={<Portfolio />} />
+        <Route path="New-Portfolio/contact" element={<Contact />} />
         <Route path="*" element={<Error />} />
       </Routes>
     </Router>
