@@ -3,19 +3,30 @@ import s from './left.module.css';
 import { useState } from 'react';
 import DataAdresse from '../../data/DataAdresse';
 import { AdresseItem } from '../../data/DataAdresse';
+import { GridLoader } from 'react-spinners';
 // import DataSocialmedia from '../../data/DataSocialmedia';
 // import { MediaItems } from '../../data/DataSocialmedia';
 
 const Left: React.FC = () => {
     const [dataAdresse] = useState<AdresseItem[]>(DataAdresse);
+    const [loadingprofil, Setloadingprofil] = useState<boolean>(true); 
     // const [dataSocialmedia] = useState<MediaItems[]>(DataSocialmedia);
+    const handdleloadprofil = ()=> {
+        Setloadingprofil(false);
+    }
 
     return (
         <Fragment>
             <div className={`${s.boxparents} rounded-xl shadow-lg `}>
                 <div className={`${s.childbox} flex flex-col w-full justify-center items-center  h-full`}>
                     <div className={`${s.profil} px-24 pt-4`}>
-                        <img src="./image/5.png" width="100%" alt="" className="" />
+
+                        {loadingprofil && (
+                            <div className={s.spinnerContainer}>
+                                <GridLoader color="#9f7126" size={25} loading={loadingprofil} />
+                            </div>
+                        )}
+                        <img src="./image/5.png" width="100%" alt="" className="" onLoad={handdleloadprofil} />
                     </div>
                     <div className={`${s.name} flex flex-col justify-center items-center px-10 py-5`}>
                         <div className={`${s.fullname} flex justify-center font-semibold text-white items-center `}>

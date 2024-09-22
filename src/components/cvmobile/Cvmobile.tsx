@@ -7,12 +7,18 @@ import { FaReact } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 import DataSocialmedia from '../../data/DataSocialmedia';
 import { MediaItems } from '../../data/DataSocialmedia';
+import { GridLoader } from 'react-spinners';
+
 
 const Cvmobile: React.FC = () => {
     const [dataAdresse] = useState<AdresseItem[]>(DataAdresse);
     const [dataSocialmedia] = useState<MediaItems[]>(DataSocialmedia);
-
     const [isOpen, setIsOpen] = useState<boolean>(false);
+    const [loadingprofil, Setloadingprofil] = useState<boolean>(true); 
+
+    const handdleloadprofil = ()=> {
+        Setloadingprofil(false);
+    }
 
 
 
@@ -21,7 +27,12 @@ const Cvmobile: React.FC = () => {
             <div className={`${s.boxparents} max-w-96 rounded-xl shadow-lg relative`}>
                 <div className={`${s.childbox} flex flex-col w-full justify-center items-center h-full`}>
                     <div className={`${s.profil} px-24 pt-4`}>
-                        <img src="./image/5.png" width="100%" alt="" className="" />
+                    {loadingprofil && (
+                            <div className={s.spinnerContainer}>
+                                <GridLoader color="#9f7126" size={25} loading={loadingprofil} />
+                            </div>
+                        )}
+                        <img src="./image/5.png" width="100%" alt="" className="" onLoad={handdleloadprofil} />
                     </div>
                     <div className={`${s.name} flex flex-col justify-center items-center px-10 py-5`}>
                         <div className={`${s.fullname} flex justify-center font-semibold text-white items-center`}>

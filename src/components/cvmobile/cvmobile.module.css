@@ -63,6 +63,15 @@
     right: 0; 
     border-bottom-left-radius: 17px;
 }
+
+.spinnerContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 185px; 
+  }
+
+
 @media (max-width: 1200px) {
   
 }

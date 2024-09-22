@@ -20,3 +20,10 @@
     transition: 0.3s;
     filter: grayscale(0%);
 }
+
+.spinnerContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px; 
+}
