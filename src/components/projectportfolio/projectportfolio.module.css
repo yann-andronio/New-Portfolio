@@ -62,7 +62,9 @@
     transform: scale(1.05);
 }
 
-.blur {
-    filter: blur(10px);
-    transition: filter 0.3s ease;
+.spinnerContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px; 
 }

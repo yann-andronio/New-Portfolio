@@ -5,12 +5,13 @@ import Dataporfolioproject from "../../data/Dataporfolioproject";
 import { projectItems } from "../../data/Dataporfolioproject";
 import { FiExternalLink } from 'react-icons/fi';
 import { motion } from 'framer-motion';
+import {MoonLoader} from "react-spinners";
 
 
 const Projectportfolio: React.FC = () => {
     const [Dataptojectfilter, Setdataprojectfilter] = useState<projectItems[]>(Dataporfolioproject);
     const [Typeactive, settypeactive] = useState<string>("Tout");
-    const [loadingimage, setLoadingimage] = useState<boolean>(true); 
+    const [loadingimage, setLoadingimage] = useState<boolean>(true);
 
     const Filtebytype = (type: string) => {
         settypeactive(type);
@@ -19,7 +20,7 @@ const Projectportfolio: React.FC = () => {
     };
 
     const handleImageLoad = () => {
-        setLoadingimage(false); 
+        setLoadingimage(false);
     };
 
     return (
@@ -82,11 +83,16 @@ const Projectportfolio: React.FC = () => {
                         exit={{ opacity: 0, scale: 0.8, y: -30 }}
                         transition={{ duration: 0.6, delay: index * 0.1, type: "spring", stiffness: 150 }}
                     >
-                          <img 
-                            src={`./image/projet/${item.image}.png`} 
-                            alt={item.name} 
-                            className={`${s.projectImage} rounded-lg ${loadingimage ? s.blur : ""}`} 
-                            onLoad={handleImageLoad}  
+                        {loadingimage && (
+                            <div className={s.spinnerContainer}>
+                                <MoonLoader color="#9f7126" size={100}  loading={loadingimage} />
+                            </div>
+                        )}
+                        <img
+                            src={`./image/projet/${item.image}.png`}
+                            alt={item.name}
+                            className={`${s.projectImage} rounded-lg `}
+                            onLoad={handleImageLoad}
                         />
                         <h2 className={`${s.projectName} font-bold text-2xl text-gray-300 mt-2`}>{item.name}</h2>
                         <h3 className={`${s.projectType} text-base `}>{item.type}</h3>
