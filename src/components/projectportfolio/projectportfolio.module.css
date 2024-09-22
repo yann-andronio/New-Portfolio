@@ -62,3 +62,7 @@
     transform: scale(1.05);
 }
 
+.blur {
+    filter: blur(10px);
+    transition: filter 0.3s ease;
+}
