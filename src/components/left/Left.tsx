@@ -3,17 +3,16 @@ import s from './left.module.css';
 import { useState } from 'react';
 import DataAdresse from '../../data/DataAdresse';
 import { AdresseItem } from '../../data/DataAdresse';
-import { GridLoader } from 'react-spinners';
 // import DataSocialmedia from '../../data/DataSocialmedia';
 // import { MediaItems } from '../../data/DataSocialmedia';
 
 const Left: React.FC = () => {
     const [dataAdresse] = useState<AdresseItem[]>(DataAdresse);
-    const [loadingprofil, Setloadingprofil] = useState<boolean>(true); 
+    // const [loadingprofil, Setloadingprofil] = useState<boolean>(true); 
     // const [dataSocialmedia] = useState<MediaItems[]>(DataSocialmedia);
-    const handdleloadprofil = ()=> {
-        Setloadingprofil(false);
-    }
+    // const handdleloadprofil = ()=> {
+    //     Setloadingprofil(false);
+    // }
 
     return (
         <Fragment>
@@ -21,12 +20,12 @@ const Left: React.FC = () => {
                 <div className={`${s.childbox} flex flex-col w-full justify-center items-center  h-full`}>
                     <div className={`${s.profil} px-24 pt-4`}>
 
-                        {loadingprofil && (
+                        {/* {loadingprofil && (
                             <div className={s.spinnerContainer}>
                                 <GridLoader color="#9f7126" size={25} loading={loadingprofil} />
                             </div>
-                        )}
-                        <img src="./image/5.png" width="100%" alt="" className="" onLoad={handdleloadprofil} />
+                        )} */}
+                        <img src="./image/5.png" width="100%" alt="" className=""  />
                     </div>
                     <div className={`${s.name} flex flex-col justify-center items-center px-10 py-5`}>
                         <div className={`${s.fullname} flex justify-center font-semibold text-white items-center `}>
