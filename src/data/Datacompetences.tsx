@@ -1,5 +1,5 @@
 import { ReactElement } from 'react';
-import { FaHtml5, FaCss3Alt, FaBootstrap, FaReact, FaNodeJs, FaDatabase } from 'react-icons/fa';
+import { FaHtml5, FaCss3Alt, FaBootstrap, FaReact, FaNodeJs, FaDatabase, FaGit , FaGithub } from 'react-icons/fa';
 import { SiTailwindcss, SiCsharp, SiJavascript , SiTypescript } from 'react-icons/si';
 import { SiAdobephotoshop } from 'react-icons/si';
 import { FaBolt } from 'react-icons/fa';
@@ -63,6 +63,18 @@ const Datacompetence: SkillItems[] = [
     name: "TypeScript",
    
 },
+  {
+    id: 11,
+    icon: <FaGit color="#F05032" size={30} />,
+    name: "Git",
+   
+},
+  {
+    id: 12,
+    icon: <FaGithub color="#181717" size={30} />,
+    name: "Github",
+   
+},
   
 
   // {
@@ -76,12 +88,12 @@ const Datacompetence: SkillItems[] = [
   //   name: "NestJS"
   // },
   {
-    id: 12,
+    id: 13,
     icon: <SiJavascript color="#F7DF1E" size={30} />,
     name: "JavaScript"
   }, 
   {
-    id: 13,
+    id: 14,
     icon: <FaBolt color="#F7DF1E" size={30} />,
     name: "Vite"
   }

@@ -1,6 +1,6 @@
 import { Fragment } from "react/jsx-runtime";
 import s from "./skills.module.css";
-import { FaHtml5, FaCss3Alt, FaBootstrap, FaReact, FaDatabase, } from 'react-icons/fa';
+import { FaHtml5, FaCss3Alt, FaBootstrap, FaReact, FaDatabase,FaGit ,FaGithub } from 'react-icons/fa';
 import { SiTailwindcss, SiCsharp, SiJavascript, SiExpress ,SiTypescript } from 'react-icons/si';
 import { SiAdobephotoshop } from 'react-icons/si';
 const Skills: React.FC = () => {
@@ -66,6 +66,16 @@ const Skills: React.FC = () => {
             icon: <SiTypescript color="#3178C6" size={30} />,
             name: "TypeScript",
             progressbar: 60
+        },
+        {
+            icon: <FaGit color="#F05032" size={30} />,
+            name: "Git",
+            progressbar: 65
+        },
+        {
+            icon: <FaGithub color="#181717" size={30} />,
+            name: "Github",
+            progressbar: 65
         },
     ];
 
