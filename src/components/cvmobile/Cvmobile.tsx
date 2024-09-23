@@ -21,7 +21,7 @@ const Cvmobile: React.FC = () => {
     return (
         <Fragment>
             <div className={`${s.boxparents} max-w-96 rounded-xl shadow-lg relative`}>
-                <div className={`${s.childbox} flex flex-col w-full justify-center items-center h-full`}>
+                <div className={`${s.childbox} flex flex-col w-full justify-center items-center h-full `}>
                     <div className={`${s.profil} px-24 pt-4`}>
                     {/* {loadingprofil && (
                             <div className={s.spinnerContainer}>
