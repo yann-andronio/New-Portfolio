@@ -28,7 +28,7 @@ const Cvmobile: React.FC = () => {
                                 <GridLoader color="#9f7126" size={25} loading={loadingprofil} />
                             </div>
                         )} */}
-                        <img src="./image/5.png" width="100%" alt="" className=""  />
+                        <img src="./image/4.png" width="100%" alt="" className=""  />
                     </div>
                     <div className={`${s.name} flex flex-col justify-center items-center px-10 py-5`}>
                         <div className={`${s.fullname} flex justify-center font-semibold text-white items-center`}>
