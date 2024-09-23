@@ -2,6 +2,7 @@ import { Fragment, useState } from "react";
 import s from "./mapandcontact.module.css";
 import { IoIosSend } from "react-icons/io";
 import { MoonLoader } from "react-spinners";
+// import axios from "axios";
 
 // import Datasocialcontact from "../../data/Datasocialcontact";
 // import { MediaItemscontact } from "../../data/Datasocialcontact";
@@ -33,6 +34,17 @@ const Mapandecontact: React.FC = () => {
         e.preventDefault();
         console.log(inputs.fullname);
 
+
+        // axios
+        //     .post('http://localhost:3000/send', inputs)
+        //     .then((res) => {
+        //         console.log('Message envoyé avec succès:', res.data);
+        //         alert('Votre message a été envoyé avec succès !');
+        //     })
+        //     .catch((error) => {
+        //         console.error('Erreur lors de l\'envoi du message:', error);
+        //         alert('Une erreur est survenue lors de l\'envoi de votre message.');
+        //     });
     };
 
     const handleImageLoad = () => {
