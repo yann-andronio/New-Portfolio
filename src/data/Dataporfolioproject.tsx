@@ -134,7 +134,7 @@ const Dataporfolioproject: projectItems[] = [
             { icon: SiCsharp, color: '#178600' }
         ],
         type: "Jeux vidéo",
-        link: "https://travelapp.com",
+        link: "https://goball.com",
         image: "9",
     },
     {
@@ -156,8 +156,21 @@ const Dataporfolioproject: projectItems[] = [
             { icon: SiCsharp, color: '#178600' }
         ],
         type: "Jeux vidéo",
-        link: "https://travelapp.com",
+        link: "https://aventure",
         image: "11",
+    },
+    {   
+        id: 12, 
+        name: "Art Logo",
+        langageIcons: [
+            { icon: FaHtml5, color: '#E34F26' },
+            { icon: FaCss3Alt, color: '#1572B6' },
+            { icon: SiJavascript, color: '#F7DF1E' },
+            { icon: FaBootstrap, color: '#563D7C' }
+        ],
+        type: "Web",
+        link: "https://art-logo.netlify.app",
+        image: "12",
     },
 ];
 
